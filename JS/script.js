@@ -31,6 +31,19 @@ const team =
     foto: 'barbara-ramos-graphic-designer.jpg',
 },
 ];
+//  dichiaro la parte del doom
+const foglio = document.querySelector('.team');
+const carte = document.querySelector('.card');
+const boxElement = document.createElement('div');
+boxElement.classList.add('box');
+
+// ciclo per stampare sulla pagina la griglia
+for (let index = 0; index < 6; index++) {
+    const squareElement = document.createElement('article');
+    squareElement.classList.add('card');
+    boxElement.appendChild(squareElement);
+}
+document.body.appendChild(boxElement);
 
 // stampa in pagina 
 for (let index = 0; index < team.length; index++) {
