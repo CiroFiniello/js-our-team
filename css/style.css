@@ -1,0 +1,21 @@
+*{
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+div.team{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 900px;
+    margin: auto ;
+}
+article.card{
+width: calc((100% / 3) - 6px);
+height: 300px;
+border: 1px solid white;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
