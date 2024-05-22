@@ -47,7 +47,11 @@ document.body.appendChild(boxElement);
 
 // stampa in pagina 
 for (let index = 0; index < team.length; index++) {
-    console.log(team[index]);   
-}
+    const membro = team[index];
+    for (const key in team[index]) {
+            console.log(membro[key]);  
+        }
+    } 
+
 
 
