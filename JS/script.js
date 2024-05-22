@@ -38,20 +38,27 @@ const boxElement = document.createElement('div');
 boxElement.classList.add('box');
 
 // ciclo per stampare sulla pagina la griglia
-for (let index = 0; index < 6; index++) {
-    const squareElement = document.createElement('article');
-    squareElement.classList.add('card');
+    
+    for (let index = 0; index < team.length; index++) {
+        const membro = team[index];
+        const squareElement = document.createElement('article');
+        squareElement.classList.add('card');
+        for (const key in membro){
+        const infoElement = document.createElement('p');
+        infoElement.innerHTML =`<strong>${key}:</strong> ${membro[key]}`;
+        squareElement.appendChild(infoElement);
+        } 
     boxElement.appendChild(squareElement);
 }
 document.body.appendChild(boxElement);
 
 // stampa in pagina 
-for (let index = 0; index < team.length; index++) {
-    const membro = team[index];
-    for (const key in team[index]) {
-            console.log(membro[key]);  
-        }
-    } 
+// for (let index = 0; index < team.length; index++) {
+//     const membro = team[index];
+//     for (const key in team[index]) {
+//             console.log(key , membro[key]);  
+//         }
+//     } 
 
 
 
