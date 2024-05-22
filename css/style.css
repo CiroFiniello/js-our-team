@@ -13,7 +13,7 @@ div.team{
 }
 article.card{
 width: calc((100% / 3) - 6px);
-height: 300px;
+height: 400px;
 border: 1px solid white;
 justify-content: center;
 align-items: center;
